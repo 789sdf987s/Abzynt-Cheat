@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{6c629b28-ef59-4a17-ac6b-fb66833943a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\memory">
+      <UniqueIdentifier>{a8b93619-31be-4231-8821-9d90c5f2e7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\entities">
+      <UniqueIdentifier>{0fac31ca-e998-4777-9628-0b1a000b1d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\csgo">
+      <UniqueIdentifier>{a4769a70-c8af-4843-92cb-b5da5a5aad74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\csgo\client">
+      <UniqueIdentifier>{31fa604e-a24c-40b3-8943-e6508690aec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\offsets">
+      <UniqueIdentifier>{e569b6f1-2469-4d17-86dc-0f8779f84702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\entities\player">
+      <UniqueIdentifier>{b466fc5d-9c07-407b-9f7b-3baf302f2648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheats">
+      <UniqueIdentifier>{c72133e2-f58e-47b0-b0b9-d6bec3360199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheats\triggerbot">
+      <UniqueIdentifier>{c1c77a85-99dc-48ce-b4be-35aff4270727}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\sdk.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\memory\memory.hpp">
+      <Filter>sdk\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\csgo\client\client.hpp">
+      <Filter>sdk\csgo\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\offsets\offsets.hpp">
+      <Filter>sdk\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\entities\player\player.hpp">
+      <Filter>sdk\entities\player</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\triggerbot\triggerbot.hpp">
+      <Filter>cheats\triggerbot</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sdk\memory\memory.cpp">
+      <Filter>sdk\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\csgo\client\client.cpp">
+      <Filter>sdk\csgo\client</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\entities\player\player.cpp">
+      <Filter>sdk\entities\player</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\triggerbot\triggerbot.cpp">
+      <Filter>cheats\triggerbot</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
