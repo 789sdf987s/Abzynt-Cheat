@@ -32,6 +32,9 @@
     <Filter Include="cheats\triggerbot">
       <UniqueIdentifier>{c1c77a85-99dc-48ce-b4be-35aff4270727}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cheats\radarhack">
+      <UniqueIdentifier>{b50f0d45-d377-4b76-9692-6f8c5b87a5ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\sdk.hpp">
@@ -52,6 +55,9 @@
     <ClInclude Include="cheats\triggerbot\triggerbot.hpp">
       <Filter>cheats\triggerbot</Filter>
     </ClInclude>
+    <ClInclude Include="cheats\radarhack\radarhack.hpp">
+      <Filter>cheats\radarhack</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -66,6 +72,9 @@
     </ClCompile>
     <ClCompile Include="cheats\triggerbot\triggerbot.cpp">
       <Filter>cheats\triggerbot</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\radarhack\radarhack.cpp">
+      <Filter>cheats\radarhack</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

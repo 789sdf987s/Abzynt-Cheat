@@ -9,5 +9,6 @@ public:
 	const uint32_t crosshair_id = 0xB394;
 	const uint32_t team_id = 0xF4;
 	const uint32_t force_attack = 0x3114BA4;
+	const uint32_t bspotted = 0x93D;
 };
 extern c_offsets offsets;

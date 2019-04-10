@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cheats\radarhack\radarhack.cpp" />
     <ClCompile Include="cheats\triggerbot\triggerbot.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sdk\csgo\client\client.cpp" />
@@ -162,6 +163,7 @@
     <ClCompile Include="sdk\memory\memory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cheats\radarhack\radarhack.hpp" />
     <ClInclude Include="cheats\triggerbot\triggerbot.hpp" />
     <ClInclude Include="sdk\csgo\client\client.hpp" />
     <ClInclude Include="sdk\entities\player\player.hpp" />

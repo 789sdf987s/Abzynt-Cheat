@@ -11,3 +11,4 @@
 #include "entities/player/player.hpp"
 #include "csgo/client/client.hpp"
 #include "../cheats/triggerbot/triggerbot.hpp"
+#include "../cheats/radarhack/radarhack.hpp"
