@@ -4,4 +4,5 @@ A simple external cheat written in c++. Created for Counter-Strike: Global Offen
 # Features
 ```
 -Triggerbot
+-Radarhack
 ```
