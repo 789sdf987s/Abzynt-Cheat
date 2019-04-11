@@ -6,7 +6,6 @@ void c_radarhack::think()
 	if (g_pconfig->settings.radarhack)
 	{
 		const auto local_player = g_pclient->get_local_player(); // We're getting local player's address
-		const auto team = local_player->get_team(); // Getting local player's team
 
 		for (auto i = 1; i <= 64; i++) { // Looping through 64 entities because in csgo players are on fist 64 positions.
 			const auto player = g_pclient->get_player(i); // Getting player.
