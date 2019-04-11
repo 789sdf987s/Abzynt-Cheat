@@ -22,11 +22,22 @@ int main()
 
 	std::cout << "Cheat is ready!" << std::endl;
 
+	g_pconfig->load();
+
+	std::cout << "Features:" << std::endl;
+	std::cout << " - Triggerbot = " << (g_pconfig->settings.triggerbot ? "True" : "False") << std::endl;
+	std::cout << " - Triggerbot Key = " << g_pconfig->settings.triggerbot_key << std::endl;
+	std::cout << " - Autopistol = " << (g_pconfig->settings.autopistol ? "True" : "False") << std::endl;
+	std::cout << " - Radarhack = " << (g_pconfig->settings.radarhack ? "True" : "False") << std::endl;
+	std::cout << " - FovChanger = " << (g_pconfig->settings.fovchanger ? "True" : "False") << std::endl;
+	std::cout << " - FovChanger Amount = " << g_pconfig->settings.fovchanger_amount << std::endl;
+
 	do {
 		g_ptriggerbot->think();
 		g_pradarhack->think();
 		g_pfovchanger->think();
 		g_pautopistol->think();
+
 		std::this_thread::sleep_for(std::chrono::milliseconds(1)); // Sleeping for 1ms to lower cpu usage.
 	} while (true);
 }

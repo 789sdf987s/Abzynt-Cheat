@@ -44,6 +44,12 @@
     <Filter Include="cheats\autopistol">
       <UniqueIdentifier>{c8ddf165-1728-48fa-962d-1f178922668b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{eb3504f3-b9db-4c02-bad5-9c9ecf77e8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\config">
+      <UniqueIdentifier>{28a1b99c-7fdc-4708-8b24-acec5dab6140}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\sdk.hpp">
@@ -76,6 +82,15 @@
     <ClInclude Include="cheats\autopistol\autopistol.hpp">
       <Filter>cheats\autopistol</Filter>
     </ClInclude>
+    <ClInclude Include="json\json-forwards.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\config\config.hpp">
+      <Filter>sdk\config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -102,6 +117,12 @@
     </ClCompile>
     <ClCompile Include="cheats\autopistol\autopistol.cpp">
       <Filter>cheats\autopistol</Filter>
+    </ClCompile>
+    <ClCompile Include="json\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\config\config.cpp">
+      <Filter>sdk\config</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
