@@ -35,6 +35,15 @@
     <Filter Include="cheats\radarhack">
       <UniqueIdentifier>{b50f0d45-d377-4b76-9692-6f8c5b87a5ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sdk\entities\weapon">
+      <UniqueIdentifier>{80b878d3-48bc-48be-b2d4-9ca17f258739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheats\fovchanger">
+      <UniqueIdentifier>{854c5741-0ab9-45ad-9277-8c2bebb3f1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheats\autopistol">
+      <UniqueIdentifier>{c8ddf165-1728-48fa-962d-1f178922668b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\sdk.hpp">
@@ -58,6 +67,15 @@
     <ClInclude Include="cheats\radarhack\radarhack.hpp">
       <Filter>cheats\radarhack</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\entities\weapon\weapon.hpp">
+      <Filter>sdk\entities\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\fovchanger\fovchanger.hpp">
+      <Filter>cheats\fovchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\autopistol\autopistol.hpp">
+      <Filter>cheats\autopistol</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -75,6 +93,15 @@
     </ClCompile>
     <ClCompile Include="cheats\radarhack\radarhack.cpp">
       <Filter>cheats\radarhack</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\entities\weapon\weapon.cpp">
+      <Filter>sdk\entities\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\fovchanger\fovchanger.cpp">
+      <Filter>cheats\fovchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\autopistol\autopistol.cpp">
+      <Filter>cheats\autopistol</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -155,18 +155,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cheats\autopistol\autopistol.cpp" />
+    <ClCompile Include="cheats\fovchanger\fovchanger.cpp" />
     <ClCompile Include="cheats\radarhack\radarhack.cpp" />
     <ClCompile Include="cheats\triggerbot\triggerbot.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sdk\csgo\client\client.cpp" />
     <ClCompile Include="sdk\entities\player\player.cpp" />
+    <ClCompile Include="sdk\entities\weapon\weapon.cpp" />
     <ClCompile Include="sdk\memory\memory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cheats\autopistol\autopistol.hpp" />
+    <ClInclude Include="cheats\fovchanger\fovchanger.hpp" />
     <ClInclude Include="cheats\radarhack\radarhack.hpp" />
     <ClInclude Include="cheats\triggerbot\triggerbot.hpp" />
     <ClInclude Include="sdk\csgo\client\client.hpp" />
     <ClInclude Include="sdk\entities\player\player.hpp" />
+    <ClInclude Include="sdk\entities\weapon\weapon.hpp" />
     <ClInclude Include="sdk\memory\memory.hpp" />
     <ClInclude Include="sdk\offsets\offsets.hpp" />
     <ClInclude Include="sdk\sdk.hpp" />

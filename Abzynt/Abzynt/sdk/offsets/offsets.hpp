@@ -10,5 +10,10 @@ public:
 	const uint32_t team_id = 0xF4;
 	const uint32_t force_attack = 0x3114BA4;
 	const uint32_t bspotted = 0x93D;
+	const uint32_t item_definition_index = 0x2FAA;
+	const uint32_t active_weapon = 0x2EF8;
+	const uint32_t fov = 0x31E4;
+	const uint32_t is_scoped = 0x390A;
+	const uint32_t zoom_level = 0x3390;
 };
 extern c_offsets offsets;

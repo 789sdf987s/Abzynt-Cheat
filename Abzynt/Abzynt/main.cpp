@@ -25,6 +25,8 @@ int main()
 	do {
 		g_ptriggerbot->think();
 		g_pradarhack->think();
-		std::this_thread::sleep_for(std::chrono::milliseconds(1)); // Sleeping for 1ms to get better optimalization.
+		g_pfovchanger->think();
+		g_pautopistol->think();
+		std::this_thread::sleep_for(std::chrono::milliseconds(1)); // Sleeping for 1ms to lower cpu usage.
 	} while (true);
 }
