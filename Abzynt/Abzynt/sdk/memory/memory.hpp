@@ -6,6 +6,7 @@ private:
 	uint32_t process_id;
 	HANDLE process_handle;
 public:
+	~c_memory();
 	bool get_process_id(const std::string process_name);
 	bool get_handle(const std::string process_name);
 	uint32_t get_module(const std::string module_name);

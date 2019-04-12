@@ -1,6 +1,11 @@
 #include "memory.hpp"
 std::unique_ptr<c_memory> g_pmemory = std::make_unique<c_memory>();
 
+c_memory::~c_memory()
+{
+	CloseHandle(process_handle);
+}
+
 bool c_memory::get_process_id(const std::string process_name)
 {
 	PROCESSENTRY32 entry;
@@ -20,7 +25,7 @@ bool c_memory::get_process_id(const std::string process_name)
 			}
 		}
 	}
-
+	CloseHandle(snapshot);
 	return false;
 }
 
@@ -28,14 +33,20 @@ bool c_memory::get_handle(const std::string process_name)
 {
 
 	if (!process_id)
+	{
 		return false;
+	}
 
 	const auto handle = OpenProcess(PROCESS_ALL_ACCESS, false, process_id);
 
 	if (!handle)
+	{
+		CloseHandle(handle);
 		return false;
+	}
 
 	process_handle = handle;
+	CloseHandle(handle);
 
 	return true;
 }
@@ -58,7 +69,7 @@ uint32_t c_memory::get_module(const std::string module_name)
 			}
 		}
 	}
-
+	CloseHandle(snapshot);
 	return NULL;
 }
 
