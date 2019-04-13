@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="cheats\autopistol\autopistol.cpp" />
     <ClCompile Include="cheats\fovchanger\fovchanger.cpp" />
+    <ClCompile Include="cheats\glowesp\glowesp.cpp" />
     <ClCompile Include="cheats\radarhack\radarhack.cpp" />
     <ClCompile Include="cheats\triggerbot\triggerbot.cpp" />
     <ClCompile Include="json\jsoncpp.cpp" />
@@ -170,6 +171,7 @@
   <ItemGroup>
     <ClInclude Include="cheats\autopistol\autopistol.hpp" />
     <ClInclude Include="cheats\fovchanger\fovchanger.hpp" />
+    <ClInclude Include="cheats\glowesp\glowesp.hpp" />
     <ClInclude Include="cheats\radarhack\radarhack.hpp" />
     <ClInclude Include="cheats\triggerbot\triggerbot.hpp" />
     <ClInclude Include="json\json-forwards.hpp" />
@@ -178,6 +180,7 @@
     <ClInclude Include="sdk\csgo\client\client.hpp" />
     <ClInclude Include="sdk\entities\player\player.hpp" />
     <ClInclude Include="sdk\entities\weapon\weapon.hpp" />
+    <ClInclude Include="sdk\math\vec3.hpp" />
     <ClInclude Include="sdk\memory\memory.hpp" />
     <ClInclude Include="sdk\offsets\offsets.hpp" />
     <ClInclude Include="sdk\sdk.hpp" />

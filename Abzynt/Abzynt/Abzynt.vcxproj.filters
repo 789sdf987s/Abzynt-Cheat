@@ -50,6 +50,12 @@
     <Filter Include="sdk\config">
       <UniqueIdentifier>{28a1b99c-7fdc-4708-8b24-acec5dab6140}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cheats\glowesp">
+      <UniqueIdentifier>{be88dfc0-b075-4a37-a298-89f9b691a9f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\math">
+      <UniqueIdentifier>{fd51c1cb-d200-4b3d-a4a3-c85e070c7918}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\sdk.hpp">
@@ -91,6 +97,12 @@
     <ClInclude Include="sdk\config\config.hpp">
       <Filter>sdk\config</Filter>
     </ClInclude>
+    <ClInclude Include="cheats\glowesp\glowesp.hpp">
+      <Filter>cheats\glowesp</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\vec3.hpp">
+      <Filter>sdk\math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -123,6 +135,9 @@
     </ClCompile>
     <ClCompile Include="sdk\config\config.cpp">
       <Filter>sdk\config</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\glowesp\glowesp.cpp">
+      <Filter>cheats\glowesp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

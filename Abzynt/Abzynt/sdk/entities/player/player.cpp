@@ -1,37 +1,21 @@
 #include "player.hpp"
 
-c_player::c_player(const uint32_t address)
-{
-	base = address;
-}
+player_t local, player[65];
+c_players g_players;
 
-uint32_t c_player::get_base()
+void c_players::update()
 {
-	return base;
-}
+	const auto plocal = g_pmemory->read<uintptr_t>(offsets.client_dll + offsets.local_player);
+	local = g_pmemory->read<player_t>(plocal);
+	local.base = plocal; 
+	const uint32_t active_weapon = g_pmemory->read<uint32_t>(local.base + offsets.active_weapon) & 0xFFF;
+	const auto pweapon = g_pmemory->read<uint32_t>(offsets.client_dll + offsets.entity_list + (active_weapon - 1) * 0x10);
+	local_weapon = g_pmemory->read<weapon_t>(pweapon);
 
-int c_player::get_team()
-{
-	return g_pmemory->read<int>(base + offsets.team_id);
-}
-
-int c_player::get_crosshair_id()
-{
-	return g_pmemory->read<int>(base + offsets.crosshair_id);
-}
-
-int c_player::get_fov()
-{
-	return g_pmemory->read<int>(base + offsets.fov);
-}
-
-bool c_player::is_scoped()
-{
-	return g_pmemory->read<bool>(base + offsets.is_scoped);
-}
-
-std::unique_ptr<c_weapon> c_player::get_weapon()
-{
-	const uint32_t active_weapon = g_pmemory->read<uint32_t>(base + offsets.active_weapon) & 0xFFF;
-	return std::make_unique<c_weapon>(g_pmemory->read<uint32_t>(offsets.client_dll + offsets.entity_list + (active_weapon - 1) * 0x10));
+	for (auto i = 1; i <= 64; i++)
+	{
+		const auto pplayer = g_pmemory->read<uintptr_t>(offsets.client_dll + offsets.entity_list + (i - 1) * 0x10);
+		player[i] = g_pmemory->read<player_t>(pplayer);
+		player[i].base = pplayer;
+	}
 }

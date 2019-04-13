@@ -1,7 +1,8 @@
 #pragma once
 #include "../../sdk/sdk.hpp"
 
-class c_radarhack {
+class c_radarhack 
+{
 public:
 	void think();
 };

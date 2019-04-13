@@ -1,7 +1,8 @@
 #pragma once
 #include "../../sdk/sdk.hpp"
 
-class c_fovchanger {
+class c_fovchanger 
+{
 public:
 	void think();
 };

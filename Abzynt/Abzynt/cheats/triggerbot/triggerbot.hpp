@@ -1,7 +1,8 @@
 #pragma once
 #include "../../sdk/sdk.hpp"
 
-class c_triggerbot {
+class c_triggerbot 
+{
 public:
 	void think();
 };

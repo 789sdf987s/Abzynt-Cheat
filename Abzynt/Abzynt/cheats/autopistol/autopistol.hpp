@@ -1,7 +1,8 @@
 #pragma once
 #include "../../sdk/sdk.hpp"
 
-class c_autopistol {
+class c_autopistol 
+{
 public:
 	void think();
 };

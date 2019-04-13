@@ -10,6 +10,7 @@
 
 #include "../json/json.hpp"
 #include "../json/json-forwards.hpp"
+#include "math/vec3.hpp"
 #include "memory/memory.hpp"
 #include "offsets/offsets.hpp"
 #include "entities/player/player.hpp"
@@ -20,3 +21,4 @@
 #include "../cheats/radarhack/radarhack.hpp"
 #include "../cheats/fovchanger/fovchanger.hpp"
 #include "../cheats/autopistol/autopistol.hpp"
+#include "../cheats/glowesp/glowesp.hpp"

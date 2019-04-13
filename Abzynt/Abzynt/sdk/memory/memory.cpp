@@ -25,7 +25,9 @@ bool c_memory::get_process_id(const std::string process_name)
 			}
 		}
 	}
+
 	CloseHandle(snapshot);
+
 	return false;
 }
 
@@ -37,16 +39,13 @@ bool c_memory::get_handle(const std::string process_name)
 		return false;
 	}
 
-	const auto handle = OpenProcess(PROCESS_ALL_ACCESS, false, process_id);
+	process_handle = OpenProcess(PROCESS_ALL_ACCESS, false, process_id);
 
-	if (!handle)
+	if (!process_handle)
 	{
-		CloseHandle(handle);
+		CloseHandle(process_handle);
 		return false;
 	}
-
-	process_handle = handle;
-	CloseHandle(handle);
 
 	return true;
 }
