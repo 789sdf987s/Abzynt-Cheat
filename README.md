@@ -1,3 +1,9 @@
+![Badges](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)]
+![Badges](https://forthebadge.com/images/badges/built-with-love.svg)]
+![Image](https://i.imgur.com/OC8L3lV.png)
+
+
+
 # Abzynt-Cheat
 A simple external cheat written in c++. Created for Counter-Strike: Global Offensive.
 
