@@ -56,6 +56,12 @@
     <Filter Include="sdk\math">
       <UniqueIdentifier>{fd51c1cb-d200-4b3d-a4a3-c85e070c7918}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cheats\clrrender">
+      <UniqueIdentifier>{001de6fb-678c-4554-b9ac-0176a5fb0095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheats\noflash">
+      <UniqueIdentifier>{c8a0ab47-2b58-46bd-9c77-a772371b32cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\sdk.hpp">
@@ -103,6 +109,12 @@
     <ClInclude Include="sdk\math\vec3.hpp">
       <Filter>sdk\math</Filter>
     </ClInclude>
+    <ClInclude Include="cheats\clrrender\clrrender.hpp">
+      <Filter>cheats\clrrender</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\noflash\noflash.hpp">
+      <Filter>cheats\noflash</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -138,6 +150,12 @@
     </ClCompile>
     <ClCompile Include="cheats\glowesp\glowesp.cpp">
       <Filter>cheats\glowesp</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\clrrender\clrrender.cpp">
+      <Filter>cheats\clrrender</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\noflash\noflash.cpp">
+      <Filter>cheats\noflash</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

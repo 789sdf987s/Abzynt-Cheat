@@ -156,8 +156,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cheats\autopistol\autopistol.cpp" />
+    <ClCompile Include="cheats\clrrender\clrrender.cpp" />
     <ClCompile Include="cheats\fovchanger\fovchanger.cpp" />
     <ClCompile Include="cheats\glowesp\glowesp.cpp" />
+    <ClCompile Include="cheats\noflash\noflash.cpp" />
     <ClCompile Include="cheats\radarhack\radarhack.cpp" />
     <ClCompile Include="cheats\triggerbot\triggerbot.cpp" />
     <ClCompile Include="json\jsoncpp.cpp" />
@@ -170,8 +172,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cheats\autopistol\autopistol.hpp" />
+    <ClInclude Include="cheats\clrrender\clrrender.hpp" />
     <ClInclude Include="cheats\fovchanger\fovchanger.hpp" />
     <ClInclude Include="cheats\glowesp\glowesp.hpp" />
+    <ClInclude Include="cheats\noflash\noflash.hpp" />
     <ClInclude Include="cheats\radarhack\radarhack.hpp" />
     <ClInclude Include="cheats\triggerbot\triggerbot.hpp" />
     <ClInclude Include="json\json-forwards.hpp" />

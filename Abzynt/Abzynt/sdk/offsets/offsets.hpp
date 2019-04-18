@@ -17,5 +17,7 @@ public:
 	const uint32_t zoom_level = 0x3390;
 	const uint32_t glow_object_manager = 0x5223730;
 	const uint32_t glow_index = 0xA3F8;
+	const uint32_t clr_render = 0x70;
+	const uint32_t flash_max_alpha = 0xA3DC;
 };
 extern c_offsets offsets;

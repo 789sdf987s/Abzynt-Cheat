@@ -22,3 +22,5 @@
 #include "../cheats/fovchanger/fovchanger.hpp"
 #include "../cheats/autopistol/autopistol.hpp"
 #include "../cheats/glowesp/glowesp.hpp"
+#include "../cheats/clrrender/clrrender.hpp"
+#include "../cheats/noflash//noflash.hpp"

@@ -16,8 +16,12 @@ public:
 		bool fovchanger = true;
 		int fovchanger_amount = 115;
 		bool glowesp = true;
-		float enemy_colors[3] = { 255,0,0 };
-		float team_colors[3] = { 0,255,0 };
+		float glow_enemy_colors[3] = { 255,0,0 };
+		float glow_team_colors[3] = { 0,255,0 };
+		bool clrrender = true;
+		bool noflash = true;
+		float clr_enemy_colors[3] = { 255,0,0 };
+		float clr_team_colors[3] = { 0,255,0 };
 	} settings;
 private:
 	std::string path;

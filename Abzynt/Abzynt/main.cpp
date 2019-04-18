@@ -32,11 +32,15 @@ int main()
 	std::cout << " - Triggerbot Key = " << g_config.settings.triggerbot_key << std::endl;
 	std::cout << " - Autopistol = " << (g_config.settings.autopistol ? "True" : "False") << std::endl;
 	std::cout << " - Radarhack = " << (g_config.settings.radarhack ? "True" : "False") << std::endl;
+	std::cout << " - Noflash = " << (g_config.settings.noflash ? "True" : "False") << std::endl;
 	std::cout << " - FovChanger = " << (g_config.settings.fovchanger ? "True" : "False") << std::endl;
 	std::cout << " - FovChanger Amount = " << g_config.settings.fovchanger_amount << std::endl;
 	std::cout << " - GlowESP = " << (g_config.settings.glowesp ? "True" : "False") << std::endl; 
-	std::cout << " - Team Color = " << g_config.settings.team_colors[0] << "/" << g_config.settings.team_colors[1] << "/" << g_config.settings.team_colors[2] << std::endl;
-	std::cout << " - Enemy Color = " << g_config.settings.enemy_colors[0] << "/" << g_config.settings.enemy_colors[1] << "/" << g_config.settings.enemy_colors[2] << std::endl;
+	std::cout << " - Team Color = " << g_config.settings.glow_team_colors[0] << "/" << g_config.settings.glow_team_colors[1] << "/" << g_config.settings.glow_team_colors[2] << std::endl;
+	std::cout << " - Enemy Color = " << g_config.settings.glow_enemy_colors[0] << "/" << g_config.settings.glow_enemy_colors[1] << "/" << g_config.settings.glow_enemy_colors[2] << std::endl;
+	std::cout << " - ClrRender = " << (g_config.settings.clrrender ? "True" : "False") << std::endl;
+	std::cout << " - Team Color = " << g_config.settings.clr_team_colors[0] << "/" << g_config.settings.clr_team_colors[1] << "/" << g_config.settings.clr_team_colors[2] << std::endl;
+	std::cout << " - Enemy Color = " << g_config.settings.clr_enemy_colors[0] << "/" << g_config.settings.clr_enemy_colors[1] << "/" << g_config.settings.clr_enemy_colors[2] << std::endl;
 
 	do 
 	{
@@ -46,7 +50,8 @@ int main()
 		g_pfovchanger->think();
 		g_pautopistol->think();
 		g_pglowesp->think();
-
+		g_pclrrender->think();
+		g_pnoflash->think();
 		std::this_thread::sleep_for(std::chrono::milliseconds(1)); // Sleeping for 1ms to lower cpu usage.
 	} while (true);
 }

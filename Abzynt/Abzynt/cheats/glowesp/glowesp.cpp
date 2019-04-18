@@ -11,9 +11,9 @@ void c_glowesp::think()
 		{
 			auto glow = g_pmemory->read<glow_t>(glow_object_manager + player[i].m_iGlowIndex * 0x38);
 
-			glow.red = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.team_colors[0] : g_config.settings.enemy_colors[0];
-			glow.green = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.team_colors[1] : g_config.settings.enemy_colors[1];
-			glow.blue = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.team_colors[2] : g_config.settings.enemy_colors[2];
+			glow.red = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.glow_team_colors[0] : g_config.settings.glow_enemy_colors[0];
+			glow.green = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.glow_team_colors[1] : g_config.settings.glow_enemy_colors[1];
+			glow.blue = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.glow_team_colors[2] : g_config.settings.glow_enemy_colors[2];
 			glow.alpha = 155.f;
 			glow.render_when_occluded = true;
 			glow.render_when_unoccluded = false;
