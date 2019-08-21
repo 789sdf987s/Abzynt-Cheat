@@ -7,7 +7,7 @@ void c_noflash::think()
 	{
 		if (local.m_flFlashMaxAlpha != 0)
 		{
-			g_pmemory->write<float>(local.base + offsets.flash_max_alpha, 0);
+			g_pmemory->write<float>(local.base + offsets::m_flflashmaxalpha, 0);
 		}
 	}
 }

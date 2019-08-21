@@ -14,7 +14,7 @@ void c_clrrender::think()
 			clr.blue = local.m_iTeamNum == player[i].m_iTeamNum ? g_config.settings.clr_team_colors[2] : g_config.settings.clr_enemy_colors[2];
 			clr.alpha = 255;
 
-			g_pmemory->write<clr_t>(player[i].base + offsets.clr_render, clr);
+			g_pmemory->write<clr_t>(player[i].base + offsets::m_clrrender, clr);
 		}
 	}
 }

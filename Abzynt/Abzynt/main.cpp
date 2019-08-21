@@ -1,7 +1,9 @@
 #include "sdk/sdk.hpp"
 
-c_offsets offsets;
+uint32_t offsets::client_dll;
+
 int main()
+
 {
 	SetConsoleTitle("Abzynt");
 
@@ -21,7 +23,7 @@ int main()
 		return 0;
 	}
 
-	offsets.client_dll = g_pmemory->get_module("client_panorama.dll"); // Getting module address.
+	offsets::client_dll = g_pmemory->get_module("client_panorama.dll"); // Getting module address.
 
 	std::cout << "Cheat is ready!" << std::endl;
 
@@ -41,6 +43,7 @@ int main()
 	std::cout << " - ClrRender = " << (g_config.settings.clrrender ? "True" : "False") << std::endl;
 	std::cout << " - Team Color = " << g_config.settings.clr_team_colors[0] << "/" << g_config.settings.clr_team_colors[1] << "/" << g_config.settings.clr_team_colors[2] << std::endl;
 	std::cout << " - Enemy Color = " << g_config.settings.clr_enemy_colors[0] << "/" << g_config.settings.clr_enemy_colors[1] << "/" << g_config.settings.clr_enemy_colors[2] << std::endl;
+
 
 	do 
 	{

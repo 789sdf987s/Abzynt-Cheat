@@ -9,16 +9,16 @@ void c_fovchanger::think()
 		{
 			if (local.m_iFOV != g_config.settings.fovchanger_amount) // We're checking for current fov, so we will decrease amounts of wpms when fov is 90.
 			{
-				g_pmemory->write<int>(local.base + offsets.fov, g_config.settings.fovchanger_amount); // We're writting our desired fov.
+				g_pmemory->write<int>(local.base + offsets::m_ifov, g_config.settings.fovchanger_amount); // We're writting our desired fov.
 			}
 		}
 		else if (local_weapon.m_zoomLevel == 1 && local.m_iFOV != 40) // We're checking for zoom level, so we can use normaly sg or aug.
 		{
-			g_pmemory->write<int>(local.base + offsets.fov, 40);
+			g_pmemory->write<int>(local.base + offsets::m_ifov, 40);
 		}
 		else if (local_weapon.m_zoomLevel == 2 && local.m_iFOV != 10) // We're checking for zoom level, so we can use normaly awp or scout.
 		{
-			g_pmemory->write<int>(local.base + offsets.fov, 10);
+			g_pmemory->write<int>(local.base + offsets::m_ifov, 10);
 		}
 	}
 }

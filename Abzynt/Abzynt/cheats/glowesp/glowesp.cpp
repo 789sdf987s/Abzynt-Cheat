@@ -5,7 +5,7 @@ void c_glowesp::think()
 {
 	if (g_config.settings.glowesp)
 	{
-		const auto glow_object_manager = g_pmemory->read<uint32_t>(offsets.client_dll + offsets.glow_object_manager);
+		const auto glow_object_manager = g_pmemory->read<uint32_t>(offsets::client_dll + offsets::dwglowobjectmanager);
 
 		for (auto i = 1; i <= 64; i++)
 		{

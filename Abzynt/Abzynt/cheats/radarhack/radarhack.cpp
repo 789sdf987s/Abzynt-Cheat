@@ -9,7 +9,7 @@ void c_radarhack::think()
 		{
 			if (local.m_iTeamNum != player[i].m_iTeamNum) // We're checking for team to not force bspotted for our team mates.
 			{
-				g_pmemory->write<bool>(player[i].base + offsets.bspotted, 1); // Forcing bspotted to true, so we will see enemies on radar.
+				g_pmemory->write<bool>(player[i].base + offsets::m_bspotted, 1); // Forcing bspotted to true, so we will see enemies on radar.
 			}
 		}
 	}

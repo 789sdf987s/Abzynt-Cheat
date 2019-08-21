@@ -4,6 +4,8 @@
 #include <iostream>
 #include <memory>
 #include <fstream> 
+#include <cstddef>
+#include <string_view>
 #include <thread>
 #include <Shlwapi.h>
 #pragma comment(lib, "shlwapi.lib")
